@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishwas Acharya | Cybersecurity Portfolio</title>
+    <meta name="description" content="Portfolio of Bishwas Acharya — Ethical Hacker, Penetration Tester & Cybersecurity Enthusiast. Explore my projects, skills, certifications, and security research.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Matrix Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- CRT Scanlines -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">root@portfolio:~$ <span class="blink">_</span></a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">~/about</a>
+                <a href="#skills" class="nav-link">~/skills</a>
+                <a href="#projects" class="nav-link">~/projects</a>
+                <a href="#certifications" class="nav-link">~/certs</a>
+                <a href="#labs" class="nav-link">~/labs</a>
+                <a href="#contact" class="nav-link">~/contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">bash - 80x24</div>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">root@portfolio:~$</span> whoami</p>
+                    <h1 class="glitch" data-text="Bishwas Acharya">Bishwas Acharya</h1>
+                    <div class="typing-container">
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Yr Experience</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Security Projects</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">CTF Challenges</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Languages</div>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <h2 class="section-title">~/about $ cat profile.txt</h2>
+            
+            <div class="about-grid">
+                <div class="about-bio glass-card">
+                    <h3><i class="fas fa-user-shield accent-cyan"></i> ABOUT ME</h3>
+                    <p>Hey there! I'm Bishwas — a passionate cybersecurity enthusiast currently pursuing my BSc (Hons) in Ethical Hacking & Cyber Security. I thrive on breaking into systems (ethically!), analyzing digital forensic evidence, and building secure network architectures. My playground spans home labs, CTF competitions, and hands-on security projects with tools like Wireshark, Splunk, Burp Suite, Kali Linux & Nmap.</p>
+                    
+                    <h3 class="mt-4"><i class="fas fa-bullseye accent-purple"></i> WHAT I DO</h3>
+                    <p>I explore both sides of cybersecurity — from offensive penetration testing and vulnerability hunting to defensive security monitoring and digital forensics. Every system tells a story, and I love uncovering it.</p>
+                    
+                    <h3 class="mt-4"><i class="fas fa-language accent-green"></i> LANGUAGES</h3>
+                    <div class="lang-tags">
+                        <span class="tag">English: Fluent</span>
+                        <span class="tag">Nepali: Native</span>
+                        <span class="tag">Hindi: Conversational</span>
+                    </div>
+
+                    <div class="credential-badge mt-4">
+                        <i class="fas fa-graduation-cap accent-amber"></i>
+                        <div>
+                            <strong>BSc (Hons) Ethical Hacking & Cyber Security</strong>
+                            <span>Softwarica College — Coventry University | 2023 - Present</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats glass-card">
+                    <h3><i class="fas fa-chart-pie accent-pink"></i> FOCUS SPLIT</h3>
+                    <div class="donut-chart-container">
+                        <div class="donut-chart">
+                            <div class="donut-hole">
+                                <span class="donut-label">100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item"><span class="color-box" style="background: var(--accent-purple)"></span>Defensive (40%)</div>
+                        <div class="legend-item"><span class="color-box" style="background: var(--accent-green)"></span>Analysis (30%)</div>
+                        <div class="legend-item"><span class="color-box" style="background: var(--accent-cyan)"></span>Offensive (30%)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <h2 class="section-title">~/skills $ ./analyze_capabilities.sh</h2>
+            
+            <div class="skills-grid">
+                <!-- Tech Skills Radar/Bars -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-microchip accent-cyan"></i> TECHNICAL SKILLS</h3>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Networking</span><span>85%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Web Security</span><span>80%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>SIEM/SOC</span><span>75%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="75%"></div></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Digital Forensics</span><span>70%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="70%"></div></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Scripting/Python</span><span>75%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="75%"></div></div>
+                    </div>
+                </div>
+
+                <!-- CTF Categories -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-flag accent-amber"></i> CTF CATEGORIES SOLVED</h3>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Web</span><span>85%</span></div>
+                        <div class="progress-bar amber"><div class="progress-fill" data-width="85%"></div></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Forensics</span><span>70%</span></div>
+                        <div class="progress-bar amber"><div class="progress-fill" data-width="70%"></div></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Crypto</span><span>60%</span></div>
+                        <div class="progress-bar amber"><div class="progress-fill" data-width="60%"></div></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Reversing</span><span>50%</span></div>
+                        <div class="progress-bar amber"><div class="progress-fill" data-width="50%"></div></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label"><span>Pwn</span><span>40%</span></div>
+                        <div class="progress-bar amber"><div class="progress-fill" data-width="40%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arsenal -->
+            <div class="arsenal-section glass-card mt-4">
+                <h3><i class="fas fa-tools accent-green"></i> ARSENAL (Tools)</h3>
+                <div class="tools-grid">
+                    <span class="tool-badge">Nmap</span>
+                    <span class="tool-badge">Burp Suite</span>
+                    <span class="tool-badge">Wireshark</span>
+                    <span class="tool-badge">Splunk</span>
+                    <span class="tool-badge">Linux</span>
+                    <span class="tool-badge">Metasploit</span>
+                    <span class="tool-badge">Kali</span>
+                    <span class="tool-badge">John</span>
+                    <span class="tool-badge">Hashcat</span>
+                    <span class="tool-badge">Nessus</span>
+                    <span class="tool-badge">Autopsy</span>
+                    <span class="tool-badge">Volatility</span>
+                    <span class="tool-badge">Nikto</span>
+                    <span class="tool-badge">Gobuster</span>
+                    <span class="tool-badge">SQLmap</span>
+                    <span class="tool-badge">Docker</span>
+                    <span class="tool-badge">Python</span>
+                    <span class="tool-badge">Sysinternals</span>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="soft-skills-section glass-card mt-4">
+                <h3><i class="fas fa-users accent-pink"></i> SOFT SKILLS</h3>
+                <div class="tags-container">
+                    <span class="tag outline">Teamwork</span>
+                    <span class="tag outline">Communication</span>
+                    <span class="tag outline">Problem Solving</span>
+                    <span class="tag outline">Critical Thinking</span>
+                    <span class="tag outline">Adaptability</span>
+                    <span class="tag outline">Attention to Detail</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <h2 class="section-title">~/projects $ ls -la timeline/</h2>
+            
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Enterprise Network Design & Security</h3>
+                        <p>Designed a secure multi-tier enterprise network with VLANs, OSPF, NAT, ACLs, VPN and firewall configs in Cisco Packet Tracer.</p>
+                        <div class="timeline-tags">
+                            <span class="tag mini">Networking</span>
+                            <span class="tag mini">Cisco</span>
+                            <span class="tag mini">VPN</span>
+                            <span class="tag mini">Firewall</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Web Application Penetration Testing</h3>
+                        <p>Identified SQL injection, XSS, authentication bypass vulnerabilities in target apps and produced professional vulnerability reports with remediations.</p>
+                        <div class="timeline-tags">
+                            <span class="tag mini">SQLi</span>
+                            <span class="tag mini">XSS</span>
+                            <span class="tag mini">OWASP</span>
+                            <span class="tag mini">Burp Suite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Python Port Scanner</h3>
+                        <p>Built a multithreaded TCP/IP port scanner with a GUI to detect open ports and enumerate network services.</p>
+                        <div class="timeline-tags">
+                            <span class="tag mini">Python</span>
+                            <span class="tag mini">Tkinter</span>
+                            <span class="tag mini">Sockets</span>
+                            <span class="tag mini">Threading</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Digital Forensics Investigation</h3>
+                        <p>Analyzed various forensic images and digital evidence, performed incident timeline reconstruction, file and artifact recovery analysis.</p>
+                        <div class="timeline-tags">
+                            <span class="tag mini">Wireshark</span>
+                            <span class="tag mini">FTK</span>
+                            <span class="tag mini">Autopsy</span>
+                            <span class="tag mini">Volatility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Secure Peer-to-Peer Messaging System</h3>
+                        <p>Built P2P + AES encrypted messaging app with user authentication and secure key management.</p>
+                        <div class="timeline-tags">
+                            <span class="tag mini">Python</span>
+                            <span class="tag mini">AES</span>
+                            <span class="tag mini">Cryptography</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Hack Fest 2.0 — Defend the Future</h3>
+                        <p>CTF competition at Softwarica College — earned top placement, competing solo and in teams across various challenge categories.</p>
+                        <div class="timeline-tags">
+                            <span class="tag mini">CTF</span>
+                            <span class="tag mini">Web</span>
+                            <span class="tag mini">Forensics</span>
+                            <span class="tag mini">Crypto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="section-container">
+            <h2 class="section-title">~/certs $ grep -i "certified" credentials.db</h2>
+            
+            <div class="certs-grid">
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fas fa-shield-alt accent-cyan"></i></div>
+                    <h3>ISC2 CC</h3>
+                    <p>Certified in Cybersecurity</p>
+                </div>
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fas fa-user-secret accent-purple"></i></div>
+                    <h3>OSCP / eJPT</h3>
+                    <p>Cybersecurity Entry-level</p>
+                </div>
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fas fa-radar accent-green"></i></div>
+                    <h3>CyberDefenders</h3>
+                    <p>SOC Analyst</p>
+                </div>
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fab fa-google accent-amber"></i></div>
+                    <h3>Google Cybersecurity</h3>
+                    <p>Professional Certificate</p>
+                </div>
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fas fa-bug accent-pink"></i></div>
+                    <h3>TryHackMe</h3>
+                    <p>Pre Security Path</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Labs Section -->
+    <section id="labs" class="section">
+        <div class="section-container">
+            <h2 class="section-title">~/labs $ top -u bishwas</h2>
+            
+            <div class="labs-grid">
+                <div class="lab-card glass-card">
+                    <h3><i class="fas fa-network-wired accent-cyan"></i> Cybersecurity Home Lab</h3>
+                    <p>Virtualized lab with VMs running Kali Linux, Windows targets, pfSense router/firewall for hands-on practice.</p>
+                </div>
+                <div class="lab-card glass-card">
+                    <h3><i class="fas fa-server accent-green"></i> SIEM & Practice</h3>
+                    <p>Deployed and configured Splunk/Wazuh for log analysis, alert creation, and security monitoring exercises.</p>
+                </div>
+                <div class="lab-card glass-card">
+                    <h3><i class="fas fa-project-diagram accent-purple"></i> Network Traffic Analysis</h3>
+                    <p>Wireshark packet captures, protocol analysis, anomaly detection, identifying malicious traffic patterns.</p>
+                </div>
+                <div class="lab-card glass-card">
+                    <h3><i class="fas fa-flag-checkered accent-amber"></i> CTF & Web Testing</h3>
+                    <p>Active on HackTheBox, TryHackMe, CTFtime, OverTheWire for continuous skill development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2 class="section-title">~/contact $ nc -nv [info]</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info glass-card">
+                    <h3><i class="fas fa-id-card accent-cyan"></i> TRANSMISSION PROTOCOLS</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Kathmandu, Nepal</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+977 9848544221</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>acharyabishwas123@gmail.com</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <a href="https://github.com/bishwas-02" target="_blank">github.com/bishwas-02</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <a href="https://linkedin.com/in/bishwasacharya" target="_blank">linkedin.com/in/bishwasacharya</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form-container glass-card">
+                    <h3><i class="fas fa-terminal accent-green"></i> ESTABLISH CONNECTION</h3>
+                    <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key — Replace YOUR_ACCESS_KEY_HERE with your real key from web3forms.com -->
+                        <input type="hidden" name="access_key" value="b31017cc-3619-40a4-8456-79db4a832177">
+                        <input type="hidden" name="subject" value="🔐 New Message from Portfolio — Bishwas Acharya">
+                        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+                        
+                        <div class="form-group">
+                            <label for="name">Name / Alias</label>
+                            <input type="text" id="name" name="name" required placeholder="Guest_User">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email / Return Address</label>
+                            <input type="email" id="email" name="email" required placeholder="user@domain.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Payload / Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Enter transmission..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Execute Payload
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Bishwas Acharya. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/bishwas-02" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/bishwasacharya" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:acharyabishwas123@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#hero" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
