@@ -60,8 +60,6 @@ window.addEventListener('resize', () => {
 // Typing Animation
 const typingText = document.getElementById('typing-text');
 const phrases = [
-    "Ethical Hacker",
-    "Penetration Tester",
     "Cybersecurity Enthusiast"
 ];
 
